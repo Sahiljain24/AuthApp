@@ -6,10 +6,12 @@ exports.login =(req,res)=>{
 
     const isUser = mongoose.findOne({email});
     if(!isUser){
-        res.status(404){
+        res.status(404).send(
             
-        }
+        )
     }else{
-        res.send
+        res.send(
+
+        )
     }
 }
